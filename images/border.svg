@@ -1,0 +1,26 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_237_4113)">
+<rect width="50" height="10" fill="#07031a"/>
+<rect width="10" height="50" fill="#07031a"/>
+<rect width="21" height="21" fill="#07031a"/>
+<rect width="50" height="10" transform="translate(1200) rotate(90)" fill="#07031a"/>
+<rect width="10" height="50" transform="translate(1200) rotate(90)" fill="#07031a"/>
+<rect width="21" height="21" transform="translate(1200) rotate(90)" fill="#07031a"/>
+<rect width="50" height="10" transform="translate(1200 675) rotate(-180)" fill="#07031a"/>
+<rect width="10" height="50" transform="translate(1200 675) rotate(-180)" fill="#07031a"/>
+<rect width="21" height="21" transform="translate(1200 675) rotate(-180)" fill="#07031a"/>
+<rect width="50" height="10" transform="translate(0 675) rotate(-90)" fill="#07031a"/>
+<rect width="10" height="50" transform="translate(0 675) rotate(-90)" fill="#07031a"/>
+<rect width="21" height="21" transform="translate(0 675) rotate(-90)" fill="#07031a"/>
+<path d="M1150 5H50C25.1472 5 5 25.1472 5 50V625C5 649.853 25.1472 670 50 670H1150C1174.85 670 1195 649.853 1195 625V50C1195 25.1472 1174.85 5 1150 5Z" stroke="url(#paint0_linear_237_4113)" stroke-width="10"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_237_4113" x1="1185.5" y1="661.5" x2="10.9999" y2="6.49996" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1D1D1D"/>
+<stop offset="1" stop-color="#646464"/>
+</linearGradient>
+<clipPath id="clip0_237_4113">
+<rect width="1200" height="675" fill="white"/>
+</clipPath>
+</defs>
+</svg>

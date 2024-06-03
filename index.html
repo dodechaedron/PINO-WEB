@@ -1,0 +1,1039 @@
+<!DOCTYPE html><html lang="en"><head>
+    
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Pinocchio: Super Marionette Hero</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo-pinkokio-2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo-pinkokio-2.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/logo-pinkokio-2.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/logo-pinkokio-2.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/logo-pinkokio-2.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/logo-pinkokio-2.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/logo-pinkokio-2.png">
+    <!-- <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png"> -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/logo-pinkokio-2.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/package.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fn.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/scrolloverflow.js"></script>
+    <script src="js/jquery.fullpage.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+<body>
+<!-- s:wrap -->
+<div id="wrap" class="page_main">
+    <!-- s:header -->
+    <header class="header">
+        <div class="center">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <span class="blind">Pinocchio Super Marionette Hero</span>
+                </a>
+            </h1>
+            <div class="gnb">
+                <ul class="gnb_list">
+                    <li class="gnb_item gnb_destination">
+                        <a href="./index.html" class="gnb_link">Game</a>
+                    </li>
+                    <li class="gnb_item gnb_destination">
+                        <a href="./index.html" class="gnb_link">NFT</a>
+                    </li>
+                    <li class="gnb_item gnb_destination">
+                        <a href="./index.html" class="gnb_link">TOKEN</a>
+                    </li>
+                    <li class="gnb_item gnb_destination">
+                        <a href="./index.html" class="gnb_link">Roadmap</a>
+                    </li>
+                    <!-- PARTNER 숨김처리 -->
+                    <!-- <li class="gnb_item gnb_destination">
+                                  <a href="./index.html" class="gnb_link">Partner</a>
+                              </li> -->
+                    <!-- <li class="gnb_item">
+                       
+                        <a href="https://whitepaper.kingdomheroeswar.io/" class="gnb_link" target="_blank">Whitepaper</a>
+                    </li>
+                    <li class="gnb_item">
+                        <a href="https://medium.com/@kingdomstorynft" class="gnb_link" target="_blank">News</a>
+                    </li> -->
+                    <li class="gnb_item">
+                        <!--<a href="#" class="gnb_link btn_alert">MARKETPLACE</a>-->
+                        <a href="#" class="gnb_link" target="_blank">Marketplace</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <button
+              class="btn_wallet btn btn_primary modal_open"
+              data-target=".modal_wallet"
+            >
+              Connect Wallet
+            </button> -->
+            <button class="btn_aside">
+                <span class="blind">aside open</span>
+            </button>
+        </div>
+    </header>
+    <!-- e:header -->
+
+    <!-- s:social -->
+    <div class="social_area">
+        <ul class="social_list">
+            <li class="social_item">
+                <a href="https://discord.com/invite/aRzwv7dY3v" class="social_link" target="_blank">
+                    <img src="images/ico_discord.png" alt="discord" title="discord">
+                </a>
+            </li>
+            <li class="social_item">
+                <a href="https://x.com/pinocchiocoin_" class="social_link" target="_blank">
+                    <img src="images/ico_x.png" alt="twitter" title="twitter">
+                </a>
+            </li>
+            <li class="social_item">
+                <a href="https://t.me/pinocchiochat" class="social_link" target="_blank">
+                    <img src="images/telegram.png" alt="telegram" title="medium">
+                </a>
+            </li>
+
+            <!-- 소셜 아이콘 숨김처리 푸터에도 동일하게 주석 처리-->
+            <!-- <li class="social_item">
+                      <a href="#" class="social_link btn_alert" target="_blank">
+                          <img src="./frontLayer/images/icons/ico_opensea.jpg" alt="opensea" title="opensea"/>
+                      </a>
+                  </li>
+                  <li class="social_item">
+                      <a href="#" class="social_link btn_alert" target="_blank">
+                          <img src="./frontLayer/images/icons/ico_telegram.jpg" alt="telegram" title="telegram"/>
+                      </a>
+                  </li>
+                  <li class="social_item">
+                      <a href="#" class="social_link btn_alert" target="_blank">
+                          <img src="./frontLayer/images/icons/ico_reddit.jpg" alt="reddit" title="reddit"/>
+                      </a>
+                  </li>
+                  <li class="social_item">
+                      <a href="#" class="social_link btn_alert" target="_blank">
+                          <img src="./frontLayer/images/icons/ico_instagram.jpg" alt="instagram" title="instagram"/>
+                      </a>
+                  </li> -->
+        </ul>
+    </div>
+    <!-- e:social -->
+
+    <!-- s:aside -->
+    <div class="aside_area">
+        <aside class="aside">
+            <div class="aside_body">
+                <button class="btn_close" type="button">
+                    <span class="blind">close</span>
+                </button>
+                <div class="gnb">
+                    <ul class="gnb_list">
+                        <li class="gnb_item gnb_destination">
+                            <a href="./index.html" class="gnb_link">Game</a>
+                        </li>
+                        <li class="gnb_item gnb_destination">
+                            <a href="./index.html" class="gnb_link">NFT</a>
+                        </li>
+                        <li class="gnb_item gnb_destination">
+                            <a href="./index.html" class="gnb_link">TOKEN</a>
+                        </li>
+                        <li class="gnb_item gnb_destination">
+                            <a href="./index.html" class="gnb_link">Roadmap</a>
+                        </li>
+                        <!-- PARTNER 숨김처리 -->
+                        <!-- <li class="gnb_item gnb_destination">
+                                        <a href="./index.html" class="gnb_link">Partner</a>
+                                    </li> -->
+                        <!-- <li class="gnb_item">
+                        
+                            <a href="https://whitepaper.kingdomheroeswar.io" class="gnb_link" target="_blank">Whitepaper</a>
+                        </li> -->
+                        <!-- <li class="gnb_item">
+                                        <a href="#" class="gnb_link">News</a>
+                                    </li> -->
+                        <!-- <li class="gnb_item">
+                           
+                            <a href="http://marketplace.kingdomheroeswar.io/" class="gnb_link" target="_blank">Marketplace</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- <button
+                  class="btn_wallet btn btn_primary modal_open"
+                  data-target=".modal_wallet"
+                >
+                  Connect Wallet
+                </button> -->
+            </div>
+        </aside>
+        <div class="aside_dim"></div>
+    </div>
+    <!-- e:aside -->
+
+    <!-- s:container -->
+    <div class="container">
+        <div id="fullpage">
+            <section class="section">
+                <div class="visual_area">
+                    <video poster="./frontLayer/images/img/thumb.png" data-autoplay="" loop="" muted="" playsinline="">
+                        <source src="media/PRE PREGISTER.mp4" type="video/mp4">
+                    </video>
+                    <div class="btn_wrap">
+                        <p class="info">
+                            Paradigm-Shifting Free-to-Play Strategic Development NFT game.<br>
+                            Redefining P2E: A New Era of P2E+!
+                        </p>
+                        <div class="btn_area">
+                            <a href="https://play.google.com/store/apps/details?id=com.gamepub.pn.g&pcampaignid=web_share" class="btn" target="_blank">
+                                <i class=""></i>Pre-Register
+                            </a>
+                            <!--                  AOS/IOS 빌드 전까지 주석처리 -->
+                            <!--                            <a href="#" class="btn btn_alert">-->
+                            <!--                                <i class="ico ico_ios"></i>IOS-->
+                            <!--                            </a>-->
+                            <a href="#" class="btn" target="_blank">
+                                <i class=""></i>BUY $PINO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="video_area">
+                    <div class="video">
+                        <video id="videoNFT" data-autoplay="" loop="" muted="" playsinline="">
+                            <source src="media/pinokio-video.mp4" type="video/mp4">
+                        </video>
+                        <img class="border" src="images/border.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="sec_inner">
+                    <div class="sec_box">
+                        <div class="ttl_area gsap_motion" data-gsap-vh="-20" data-gsap-duration="0.85">
+                            <h2 class="ttl">GAMEPLAY</h2>
+                        </div>
+                        <div class="slider_game_play_wrap gsap_motion scale_each" data-gsap-vh="-15" data-gsap-duration="0.85">
+                            <div class="swiper slider_game_play">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slide01">
+                                        <div class="card_area">
+                                            <div class="scale_wrap">
+                                                <div class="img_area">
+                                                    <img src="images/1.webp" alt="">
+                                                </div>
+                                                <div class="scale_area">
+                                                    <div class="scale_inner">
+                                                        <!-- <p class="txt">
+                                                            Scenario, World Domination, Boss Battle, PvP
+                                                        </p>
+                                                        <p class="txt">
+                                                            Enjoy tons of game modes in Kingdom Story!
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide02">
+                                        <div class="card_area">
+                                            <div class="scale_wrap">
+                                                <div class="img_area">
+                                                    <img src="images/2.webp" alt="">
+                                                </div>
+                                                <div class="scale_area">
+                                                    <div class="scale_inner">
+                                                        <!-- <p class="txt" data-txt="Lu Bu">Lu Bu</p>
+                                                        <p class="txt" data-txt="Sun Quan">Sun Quan</p>
+                                                        <p class="txt" data-txt="Cao Cao">Cao Cao</p>
+                                                        <p class="txt" data-txt="Guan Yu">Guan Yu</p>
+                                                        <p class="txt" data-txt="Dian Chan">
+                                                            Dian Chan
+                                                        </p>
+                                                        <p class="txt">
+                                                            Evolve the great commanders of the Three
+                                                            Kingdoms and form the strongest team!
+                                                        </p>
+                                                        <p class="txt">Collect over 300 heroes!</p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide03">
+                                        <div class="card_area">
+                                            <div class="scale_wrap">
+                                                <div class="img_area">
+                                                    <img src="images/3.webp" alt="">
+                                                </div>
+                                                <div class="scale_area">
+                                                    <div class="scale_inner">
+                                                        <!-- <p class="txt">Hey!<br>Come at me!</p>
+                                                        <p class="txt">
+                                                            You will be the one to rewrite the history of
+                                                            Three Kingdoms!
+                                                        </p>
+                                                        <p class="txt">
+                                                            Be the strongest leader and dominate the
+                                                            world!
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide04">
+                                        <div class="card_area">
+                                            <div class="scale_wrap">
+                                                <div class="img_area">
+                                                    <img src="images/4.webp" alt="">
+                                                </div>
+                                                <div class="scale_area">
+                                                    <div class="scale_inner">
+                                                        <!-- <p class="txt">
+                                                            Where is<br>
+                                                            Guan Yu?
+                                                        </p>
+                                                        <p class="txt">
+                                                            He's supposed<br>
+                                                            to be here<br>
+                                                            before the drink<br>
+                                                            gets cold...
+                                                        </p>
+                                                        <p class="txt">
+                                                            I think<br>
+                                                            there's a spy
+                                                        </p>
+                                                        <p class="txt">
+                                                            Should I <br>
+                                                            dye my hair <br>
+                                                            again?
+                                                        </p>
+                                                        <p class="txt">
+                                                            Build up the base to strengthen your kingdom
+                                                            Rule your own kingdom!
+                                                        </p>
+                                                        <p class="txt">Grow rich and strong!</p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide05">
+                                        <div class="card_area">
+                                            <div class="scale_wrap">
+                                                <div class="img_area">
+                                                    <img src="images/5.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide06">
+                                        <div class="card_area">
+                                            <div class="scale_wrap">
+                                                <div class="img_area">
+                                                    <img src="images/6.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide slide06">
+                                        <div class="card_area">
+                                            <div class="scale_wrap">
+                                                <div class="img_area">
+                                                    <img src="images/7.webp" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper_button_wrap">
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="gsap_area">
+                    <img class="gsap_motion" src="images/planet01.png" alt="" data-gsap-vh="-20" data-gsap-duration="1.2">
+                    <img class="gsap_motion" src="images/planet02.png" alt="" data-gsap-vh="-6" data-gsap-duration="0.8" data-gsap-delay="0.3">
+                    <img class="gsap_motion" src="images/planet03.png" alt="" data-gsap-vh="-25" data-gsap-duration="1.1">
+                </div> -->
+            </section>
+            
+            <section class="section">
+                <div class="sec_inner">
+                    <div class="sec_box">
+                        <div class="ttl_area gsap_motion" data-gsap-vh="-20" data-gsap-duration="0.85">
+                            <h2 class="ttl">TOKEN</h2>
+                            <p class="explain text_shadow">
+                                Diamond you get through the game is essential to obtain and
+                                strengthen heroes.<br>
+                                You can also exchange Diamond for $PINO.
+                            </p>
+                        </div>
+                        <div class="token_area gsap_motion scale_each" data-gsap-vh="-15" data-gsap-duration="0.85">
+                            <div class="token_box">
+                                <div class="scale_wrap">
+                                    <div class="img_area"></div>
+                                    <div class="scale_area">
+                                        <div class="scale_inner">
+                                            <span class="txt">PLAY</span>
+                                            <span class="txt">&amp;</span>
+                                            <span class="txt">EARN</span>
+                                            <div class="box">
+                                                <div class="rotation">
+                                                    <div class="rotation2">
+                                                        <div class="group group1">
+                                                            <img class="img" src="images/p2p-pino.png" alt="">
+                                                            <span class="txt">PVP &amp; PVE</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rotation2">
+                                                        <div class="group group2">
+                                                            <span class="txt">Diamond</span>
+                                                            <img class="img" src="images/diamond-pino.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="rotation2">
+                                                        <div class="group group3">
+                                                            <img class="img" src="images/pino-hero.png" alt="">
+                                                            <span class="txt">Heroes</span>
+                                                        </div>
+                                                    </div>
+                                                    <img class="arw arw1" src="images/token_arw01.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="group group4">
+                                                <div class="rotation">
+                                                    <img class="arw arw2" src="images/token_arw03.png" alt="">
+                                                </div>
+                                                <span class="txt">$PINO</span>
+                                                <img class="img" src="images/logo-3d.png" alt="">
+                                            </div>
+                                            <div class="group group5">
+                                                <div class="rotation">
+                                                    <img class="arw arw3" src="images/token_arw03.png" alt="">
+                                                </div>
+                                                <img class="img" src="images/pino-hero-nft.png" alt="">
+                                                <span class="txt">Heroes NFT</span>
+                                            </div>
+                                            <div class="group group6">
+                                                <div class="rotation">
+                                                    <img class="arw arw4" src="images/token_arw04.png" alt="">
+                                                </div>
+                                                <div class="rotation">
+                                                    <img class="arw arw5" src="images/token_arw05.png" alt="">
+                                                </div>
+                                                <img class="img" src="images/coins.png" alt="">
+                                            </div>
+                                            <!-- <div class="btn_area gsap_motion" data-gsap-vh="-10" data-gsap-duration="0.85">
+                                                <button type="button" class="btn btn_info d_md_none"></button>
+                                                    BUY
+                                                </button>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <button type="button" class="btn btn_info d_md_inlineflex" onclick="window.open('https://whitepaper.kingdomheroeswar.io/token/kingdom-token');">
+                                    DETAIL
+                                </button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="gsap_area cloud_area">
+                    <img class="cloud cloud1 gsap_motion" src="images/cloud01.png" alt="" data-gsap-vh="-15" data-gsap-duration="1.2" data-gsap-delay="0">
+                    <img class="cloud cloud2 gsap_motion" src="images/cloud02.png" alt="" data-gsap-vh="-15" data-gsap-duration="1.2" data-gsap-delay="0.1">
+                    <img class="cloud cloud3" src="images/cloud02.png" alt="">
+                </div> -->
+            </section>
+            <section class="section bg_wht">
+                <div class="sec_inner">
+                    <div class="sec_box">
+                        <div class="ttl_area">
+                            <h2 class="ttl">ROADMAP</h2>
+                        </div>
+                        <div class="roadmap_area scale_each">
+
+                            <div class="roadmap_box">
+                                <!--                                <div class="scale_wrap">-->
+                                <!--                                    <div class="scale_dim"></div>-->
+                                <!--                                    <div class="scale_area">-->
+                                <!--                                        <div class="scale_inner">-->
+                                <!-- <div class="img_container">
+                                    <img src="images/image_farming.png" alt="image-farming">
+                                </div> -->
+                                <div class="roadmap_graph">
+                                    <div class="circle_container">
+                                        <div class="graph_child">
+                                            <div class="circle">
+                                                <span class="circle_text"></span>
+                                            </div>
+                                            <div class="line">
+                                                <h4 class="title">Phase 1</h4>
+                                                <ul class="explain_list">
+                                                    <li class="explain">Team building.</li>
+                                                    <li class="explain">Social media & Community building</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="graph_child">
+                                            <div class="circle">
+                                                <span class="circle_text"></span>
+                                            </div>
+                                            <div class="line_top">
+                                                <h4 class="title-small"></h4>
+                                                <ul class="explain_list_top">
+                                                    <li class="explain">Official Website Launch.</li>
+                                                    <li class="explain">Pre-Register</li>
+                                                </ul>
+                                                <h4 class="title">Phase 2</h4>
+                                            </div>
+                                        </div>
+                                        <div class="graph_child">
+                                            <div class="circle"><span class="circle_text"></span></div>
+                                            <div class="line">
+                                                <h4 class="title">Phase 3</h4>
+                                                <ul class="explain_list">
+                                                    <li class="explain">Launch $PINO.</li>
+                                                    <li class="explain">Dexscaner paid</li>
+                                                    <li class="explain">$PINO Trending</li>
+                                                    <li class="explain">CG & CMC Listing</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="graph_child">
+                                            <div class="circle"><span class="circle_text"></span></div>
+                                            <div class="line_top">
+                                                <h4 class="title-small">Phase 4</h4>
+                                                <ul class="explain_list_top">
+                                                    <li class="explain">Balance Test, Contents Polishing.</li>
+                                                    <li class="explain">NFT Growth System Development.</li>
+                                                    <li class="explain">Early Access System Development.</li>
+                                                    <li class="explain">Mystery Box NFT System Development.</li>
+                                                    <li class="explain">Game Dev Completion.</li>
+                                                </ul>
+                                                <h4 class="title">Phase 4</h4>
+                                            </div>
+                                        </div>
+                                        <div class="graph_child">
+                                            <div class="circle"><span class="circle_text"></span></div>
+                                            <div class="line">
+                                                <h4 class="title">Phase 5</h4>
+                                                <ul class="explain_list">
+                                                    <li class="explain">Whitepaper Release.</li>
+                                                    <li class="explain">Influencer &amp; Web 3 Partnership.</li>
+                                                    <li class="explain">Mastery System Development.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="graph_child">
+                                            <div class="circle"><span class="circle_text"></span></div>
+                                            <div class="line_top">
+                                                <h4 class="title-small">Phase 6</h4>
+                                                <ul class="explain_list_top">
+                                                    <li class="explain">MysteryBox NFT Free-mint.</li>
+                                                    <li class="explain">Free Mint page Launch.</li>
+                                                    <li class="explain">Native Marketplace Launch.</li>
+                                                    <li class="explain">Blockchain Audit Progress.</li>
+                                                </ul>
+                                                <h4 class="title">Phase 6</h4>
+                                            </div>
+                                        </div>
+                                        <div class="graph_child">
+                                            <div class="circle"><span class="circle_text"></span></div>
+                                            <div class="line">
+                                                <h4 class="title">Phase 7</h4>
+                                                <ul class="explain_list">
+                                                    <li class="explain">Early Access Event (CBT)</li>
+                                                    <li class="explain">Open Beta Service (WebGL)</li>
+                                                    <li class="explain">Token($bPINO,$PINO) Generation Event</li>
+                                                    <li class="explain">CEX Listing Preparation</li>
+                                                    <li class="explain">1st Token Airdrop</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="graph_child">
+                                            <div class="circle"><span class="circle_text"></span></div>
+                                            <div class="line_top">
+                                                <h4 class="title-small">Phase 8</h4>
+                                                <ul class="explain_list_top">
+                                                    <li class="explain">Token Payment System Launch</li>
+                                                    <li class="explain">Adopt the Quest Platform Linking System</li>
+                                                    <li class="explain" style="color: #ffffff">Membership NFT Sales</li>
+                                                    <li class="explain" style="color: #ffffff">Wallet Integration
+                                                        Preparation
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">Heroes NFT Circulation
+                                                        System Improve
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">Mobile Version Launch
+                                                        (iOS, AOS)
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">2nd Token Airdrop</li>
+                                                    <li class="explain" style="color: #ffffff">CEX Listing</li>
+                                                    <li class="explain" style="color: #ffffff">Wallet Integration</li>
+                                                    <li class="explain" style="color: #ffffff">New Prestige Upgrade
+                                                        System Development
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">Staking System
+                                                        Development
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">Heroes NFT Circulation
+                                                        System Improve
+                                                    </li>
+                                                </ul>
+                                                <h4 class="title">Phase 8</h4>
+                                            </div>
+                                        </div>
+                                        <div class="graph_child">
+                                            <div class="circle"><span class="circle_text">H2</span></div>
+                                            <div class="line">
+                                                <h4 class="title">2024</h4>
+                                                <ul class="explain_list">
+                                                    <li class="explain" style="color: #ffffff">Staking System Launch
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">Breeding System
+                                                        Development
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">New PVE Contents Update
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">Add New In-Game Event
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">Multi-chain Support</li>
+                                                    <li class="explain" style="color: #ffffff">Influencer Collaboration
+                                                        NFT Update
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">New Prestige Upgrade
+                                                        System Launch
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">Hero Costume NFT Sale
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">IRL NFT Holder Event</li>
+                                                    <li class="explain" style="color: #ffffff">DAO System Development
+                                                    </li>
+                                                    <li class="explain" style="color: #ffffff">New Campaign Mode
+                                                        Launch
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--                                </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+                            </div>
+
+                        </div>
+
+                        <!--                        <div class="roadmap_area scale_each">-->
+                        <!--                            <div class="roadmap_box">-->
+                        <!--                                <div class="scale_wrap">-->
+
+                        <!--                                    <div class="scale_dim"></div>-->
+                        <!--                                    <div class="img_area">-->
+                        <!--                                        <div class="img"></div>-->
+                        <!--                                        <!–                                        <div class="roadmap_graph"></div>–>-->
+                        <!--                                    </div>-->
+                        <!--                                    <div class="scale_area">-->
+                        <!--                                        <div class="scale_inner">-->
+                        <!--                                            <ul class="step_list">-->
+                        <!--                                                <li class="step_item">-->
+                        <!--                                                    <b class="step_year">2022</b>-->
+                        <!--                                                    <ul class="info_list">-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Team building.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Token economy design.-->
+                        <!--                                                        </li>-->
+                        <!--                                                    </ul>-->
+                        <!--                                                </li>-->
+                        <!--                                                <li class="step_item">-->
+                        <!--                                                    <b class="step_year">2022</b>-->
+                        <!--                                                    <ul class="info_list">-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Litepaper release.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Official Website Launch.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Official Twitter Open.-->
+                        <!--                                                        </li>-->
+                        <!--                                                    </ul>-->
+                        <!--                                                </li>-->
+                        <!--                                                <li class="step_item">-->
+                        <!--                                                    <b class="step_year">2022</b>-->
+                        <!--                                                    <ul class="info_list">-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Chain Adoption.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Official Discord Open.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Official Medium Open.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Game & Guild Partnerships.-->
+                        <!--                                                        </li>-->
+                        <!--                                                    </ul>-->
+                        <!--                                                </li>-->
+                        <!--                                                <li class="step_item">-->
+                        <!--                                                    <b class="step_year">2023</b>-->
+                        <!--                                                    <ul class="info_list">-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Balance Test, Contents Polishing.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            NFT Growth System Development.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Early Access System Development.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Mystery Box NFT System Development.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Game Dev Completion.-->
+                        <!--                                                        </li>-->
+                        <!--                                                    </ul>-->
+                        <!--                                                </li>-->
+                        <!--                                                <li class="step_item">-->
+                        <!--                                                    <b class="step_year">2023</b>-->
+                        <!--                                                    <ul class="info_list">-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Whitepaper Release.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Influencer & Web 3 Partnership.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Mastery System Development.-->
+                        <!--                                                        </li>-->
+                        <!--                                                    </ul>-->
+                        <!--                                                </li>-->
+                        <!--                                                <li class="step_item">-->
+                        <!--                                                    <b class="step_year">2023</b>-->
+                        <!--                                                    <ul class="info_list">-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            MysteryBox NFT Free-mint.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Free Mint page Launch.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Native Marketplace Launch.-->
+                        <!--                                                        </li>-->
+                        <!--                                                        <li class="info_item" style="color: #a0a0a0">-->
+                        <!--                                                            Blockchain Audit Progress.-->
+                        <!--                                                        </li>-->
+                        <!--                                                    </ul>-->
+                        <!--                                                </li>-->
+                        <!--                                                <li class="step_item">-->
+                        <!--                                                    <b class="step_year">2023</b>-->
+                        <!--                                                    <ul class="info_list">-->
+                        <!--                                                        <li class="info_item">Early Access Event (CBT).</li>-->
+                        <!--                                                        <li class="info_item">Open Beta Service (WebGL).</li>-->
+                        <!--                                                        <li class="info_item">Token($bKID,$KID) Generation Event.</li>-->
+                        <!--                                                        <li class="info_item">CEX Listing Preparation.</li>-->
+                        <!--                                                        <li class="info_item">1st Token Airdrop.</li>-->
+                        <!--                                                    </ul>-->
+                        <!--                                                </li>-->
+                        <!--                                                <li class="step_item">-->
+                        <!--                                                    <b class="step_year">2024</b>-->
+                        <!--                                                    <ul class="info_list">-->
+                        <!--                                                        <li class="info_item">Game Launch (AOS, IOS)</li>-->
+                        <!--                                                        <li class="info_item">CEX Listing.</li>-->
+                        <!--                                                        <li class="info_item">DAO System Launch.</li>-->
+                        <!--                                                        <li class="info_item">Staking System Launch.</li>-->
+                        <!--                                                        <li class="info_item">Breeding System Development.</li>-->
+                        <!--                                                        <li class="info_item">Land System Launch.</li>-->
+                        <!--                                                        <li class="info_item">Hero Costume NFT Sale.</li>-->
+                        <!--                                                        <li class="info_item">New NFT Heroes Pre-Sale.</li>-->
+                        <!--                                                        <li class="info_item">Multi-chain Support.</li>-->
+                        <!--                                                        <li class="info_item">New Prestige Upgrade System Release</li>-->
+                        <!--                                                        <li class="info_item">2nd Token Airdrop</li>-->
+                        <!--                                                        <li class="info_item">NFT Showcase Events</li>-->
+                        <!--                                                    </ul>-->
+                        <!--                                                </li>-->
+                        <!--                                            </ul>-->
+                        <!--                                        </div>-->
+                        <!--                                    </div>-->
+                        <!--                                </div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                    </div>
+                </div>
+                <div class="gsap_area gsap_loadmap">
+                    <img class="d_md_none" src="images/bg-roadmap-1.png" alt="">
+                    <img class="d_md_block" src="images/bg-roadmap-1.png" alt="">
+                </div>
+            </section>
+            <!-- PARTNER 숨김처리 -->
+            <!-- <section class="section">
+                      <div class="sec_inner">
+                          <div class="sec_box">
+                              <div class="ttl_area gsap_motion" data-gsap-vh="-20" data-gsap-duration="0.85">
+                                  <h2 class="ttl">INVESTOR & PARTNER</h2>
+                              </div>
+                              <ul class="partner_list gsap_motion" data-gsap-vh="-15" data-gsap-duration="0.85">
+                                  <li class="partner_item">
+                                      <img src="./frontLayer/images/img/partner01.png" alt="LD Capital">
+                                  </li>
+                                  <li class="partner_item">
+                                      <img src="./frontLayer/images/img/partner02.png" alt="IOSG">
+                                  </li>
+                                  <li class="partner_item">
+                                      <img src="./frontLayer/images/img/partner03.png" alt="Chainlink">
+                                  </li>
+                                  <li class="partner_item">
+                                      <img src="./frontLayer/images/img/partner04.png" alt="Influx">
+                                  </li>
+                                  <li class="partner_item">
+                                      <img src="./frontLayer/images/img/partner05.png" alt="Blocksync Ventures">
+                                  </li>
+                                  <li class="partner_item">
+                                      <img src="./frontLayer/images/img/partner06.png" alt="OSAZ">
+                                  </li>
+                                  <li class="partner_item">
+                                      <img src="./frontLayer/images/img/partner07.png" alt="DeCom Holdings">
+                                  </li>
+                                  <li class="partner_item">
+                                      <img src="./frontLayer/images/img/partner08.png" alt="K300 Ventures">
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </section> -->
+            <footer class="footer fp-auto-height fp-section">
+                <div class="f_box">
+                    <div class="left_area">
+                        <div class="left_box">
+                            <div class="f_logo">
+                                <div class="logo">
+                                    <span class="blind">Pinocchio</span>
+                                </div>
+                            </div>
+                            <p class="copyright">
+                                ⓒ2024 Pinocchio All rights reserved.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right_area">
+                        <!-- subscribe_area 숨김처리 -->
+                        <!--                        <div class="subscribe_area">-->
+                        <!--                            <h3 class="ttl">Subscribe for our Newsletter</h3>-->
+                        <!--                            <div class="form_group">-->
+                        <!--                                <input type="text" class="form_control" placeholder="Enter your email"/>-->
+                        <!--                                <button class="form_btn" type="button" onclick="fn.modalOpen('.modal_victory')">-->
+                        <!--                                    SUBSCRIBE-->
+                        <!--                                </button>-->
+                        <!--                                <span class="txt_invaild">Invaild email address.</span>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                        <!-- 서브 카테고리 전체 숨김  -->
+                        <div class="right_box">
+                            <div class="link_container">
+                                <div class="link_title">Games</div>
+                                <ul class="link_menu">
+                                    <li>
+                                        <a class="link_text" href="https://play.google.com/store/apps/details?id=com.gamepub.pn.g&pcampaignid=web_share" target="_blank">Pre Pre-Register</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a class="link_text" href="https://play.google.com/store/apps/details?id=com.neosonyx.heroeswar.aos" target="_blank">Android</a>
+                                    </li>
+                                    <li>
+                                        <a class="link_text" style="color: #646464" target="_blank">iOS</a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                            <!-- <div class="link_container">
+                                <div class="link_title">Blockchain</div>
+                                <ul class="link_menu">
+                                    <li>
+                                        <a class="link_text" href="#" target="_blank">Marketplace</a>
+                                    </li>
+                                    <li>
+                                        <a class="link_text" href="#" target="_blank">Whitepaper</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                        <!-- <div class="right_box">
+                            <div class="link_container">
+                                <div class="link_title">Support</div>
+                                <ul class="link_menu">
+                                    <li>
+                                        <a class="link_text" target="_blank" href="#">FAQ</a>
+                                        
+                                    </li>
+                                    <li>
+                                        <a class="link_text" target="_blank" href="#">Customer Support</a>
+                                    
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="link_container">
+                                <div class="link_title">Legal</div>
+                                <ul class="link_menu">
+                                    <li>
+                                        <a class="link_text" href="#" target="_blank">Terms</a>
+                                    </li>
+                                    <li>
+                                        <a class="link_text" href="#" target="_blank">Privacy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+                        <!--                        <ul class="fnb_list">-->
+                        <!--                            <li class="fnb_item">-->
+                        <!--                                <a href="./index.html" class="fnb_link">Home</a>-->
+                        <!--                            </li>-->
+                        <!--                            <li class="fnb_item">-->
+                        <!--                                <a href="./privacy.html" class="fnb_link">Privacy Policy</a>-->
+                        <!--                            </li>-->
+                        <!--                            <li class="fnb_item">-->
+                        <!--                                <a href="#" class="fnb_link btn_alert">Whitepaper</a>-->
+                        <!--                            </li>-->
+                        <!--                            <li class="fnb_item">-->
+                        <!--                                <a href="./FAQ.html" class="fnb_link">FQA</a>-->
+                        <!--                            </li>-->
+                        <!--                            <li class="fnb_item">-->
+                        <!--                                <a href="./terms.html" class="fnb_link">Terms of Service</a>-->
+                        <!--                            </li>-->
+                        <!--                            <li class="fnb_item">-->
+                        <!--                                <a href="#" class="fnb_link btn_alert">Contact Us</a>-->
+                        <!--                            </li>-->
+                        <!--                        </ul>-->
+
+
+                    </div>
+                    <div class="social_area">
+                        <b class="ttl">JOIN OUR COMMUNITY</b>
+                        <ul class="social_list">
+                            <li class="social_item">
+                                <a href="https://discord.com/invite/aRzwv7dY3v" class="social_link" target="_blank">
+                                    <img src="images/ico_discord.png" alt="discord" title="discord">
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="https://x.com/pinocchiocoin_" class="social_link" target="_blank">
+                                    <img src="images/ico_x.png" alt="twitter" title="twitter">
+                                </a>
+                            </li>
+                            <li class="social_item">
+                                <a href="https://t.me/pinocchiochat" class="social_link" target="_blank">
+                                    <img src="images/telegram.png" alt="medium" title="medium">
+                                </a>
+                            </li>
+                            <!-- <li class="social_item">
+                                <a href="https://app.questn.com/event/894413676394602661" class="social_link" target="_blank">
+                                    <img src="images/ico_questn.png" alt="questn" title="questn">
+                                </a>
+                            </li> -->
+
+
+                            <!-- <li class="social_item">
+                                                <a href="https://medium.com/@kingdomstorynft" class="social_link" target="_blank">
+                                                    <img src="./frontLayer/images/icons/ico_medium.jpg" alt="medium" title="medium"/>
+                                                </a>
+                                            </li>
+                                            <li class="social_item">
+                                                <a href="#" class="social_link" target="_blank">
+                                                    <img src="./frontLayer/images/icons/ico_telegram.jpg" alt="telegram" title="telegram"/>
+                                                </a>
+                                            </li>
+                                            <li class="social_item">
+                                                <a href="#" class="social_link" target="_blank">
+                                                    <img src="./frontLayer/images/icons/ico_reddit.jpg" alt="reddit" title="reddit"/>
+                                                </a>
+                                            </li>
+                                            <li class="social_item">
+                                                <a href="#" class="social_link" target="_blank">
+                                                    <img src="./frontLayer/images/icons/ico_instagram.jpg" alt="instagram" title="instagram"/>
+                                                </a>
+                                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- e:container -->
+
+    <!-- s:modal -->
+    <!-- <div class="modal_area modal_wallet">
+        <div class="modal_centered">
+            <div class="modal_box">
+                <div class="modal_head">
+                    <h3 class="ttl">Connect Wallet</h3>
+                    <button class="btn_close modal_close">
+                        <span class="blind">modal close</span>
+                    </button>
+                </div>
+                <div class="modal_body">
+                    <div class="btn_area">
+                       
+                        <button type="button" class="btn btn_primary">
+                            <i class="ico ico_metaMask"></i>
+                            MetaMask
+                        </button>
+                       
+                        <button type="button" class="btn btn_primary">
+                            <i class="ico ico_walletConnect"></i>
+                            WalletConnect
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- e:modal -->
+
+    <!-- s:modal -->
+    <!-- <div class="modal_area modal_victory">
+        <div class="modal_centered">
+            <div class="modal_box modal_box1">
+                <div class="modal_head">
+                    <h3 class="ttl">VICTORY!</h3>
+                </div>
+                <div class="modal_body">
+                    <p class="explain">
+                        Almost finished... We need to confirm your email address.<br>
+                        To complete the subscription process, please click the link in
+                        the email we just sent you.
+                    </p>
+                    <div class="btn_area">
+                        <button type="button" class="btn btn_info btn_danger modal_close">
+                            CLOSE
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- e:modal -->
+</div>
+<!-- e:wrap -->
+
+
+</body></html>
